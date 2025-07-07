@@ -5,7 +5,7 @@ config: dict[Any, Any] = {
     'TMP_TRAIN_FOLDER': '../temp',
     'CHECKPOINT_FOLDER': '../checkpoints',
     'LOG_FOLDER': '../logs',
-    # Setear, para forcar um tamanho diferente
+    # force a different size
     #    "FORCE_INPUT_SIZE": {
     #        "INPUT_SHAPE": (400, 430),
     #       "ATTENTION_SHAPE": (25, 26),

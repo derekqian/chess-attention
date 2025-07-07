@@ -51,8 +51,8 @@ class TrainerController:
         """
             Prepare dataset
         :param folder:
-        :param use_sample_train: perc (valor <0) ou valor absoluto de qtd dados treinamento
-        :param use_sample_valid: perc (valor <0) ou valor absoluto de qtd dados validacao
+        :param use_sample_train: perc (value <0) or absolute QTD value data training
+        :param use_sample_valid: perc (value <0) or absolute QTD value validation data
         """
         # load test data
         print('loading train data...');
@@ -128,7 +128,7 @@ class TrainerController:
             self.acc_plot_valid.append(valid_acc)
 
             #
-            # testa também no test_set, se informado..
+            # Test also on test_set, if informed ..
             #
             if test_set:
                 test_acc = Evaluator(self.model, target_len=train_length).evaluate_test_data( test_set)
@@ -195,13 +195,13 @@ class DataHelper:
         # labels= [cleanup( x).lower() for x in labels]
         labels = ['<start> ' + label + ' <end>' for label in labels]
 
-        # poderia ser menor... mas pega os primeiros 10. Nem precisava restringir...
+        # It could be smaller ... but it takes the first 10. I didn't even have to restrict ...
         labels = [label.split()[0:16 + 1] for label in labels]
 
-        # somente uma parte por enquanto
+        # Only one part for now
         if use_sample:
             print('USE_SAMPLE = ', use_sample)
-            # pode ser percentual(ex: 0.1) ou valor absoluto( ex: 100)
+            # It can be percentage (Ex: 0.1) or absolute value (Ex: 100)
             # n = max(use_sample, int(len(image_files) * use_sample))
             # n = min(n, len(image_files))
             n = int(len(image_files) * use_sample) if use_sample <= 1 else min(use_sample, len(image_files))
@@ -223,7 +223,7 @@ class DataHelper:
         def not_exists(f):
             return not Path(f).is_file()
 
-        # filtra imagens com cache ja criado..
+        # filters images with cache already created ..
         print('before', len(image_files_list))
         image_files_list = [f for f in image_files_list if not_exists(f + ".npy")]
         print('after', len(image_files_list))
@@ -236,7 +236,7 @@ class DataHelper:
         # Feel free to change batch_size according to your system configuration
         image_dataset = tf.data.Dataset.from_tensor_slices(encode_train)
         image_dataset = image_dataset.map(
-            # aqui com (8) da erro de memoria para rodar em meu pc (GPU com 6Gb memoria)
+            # Here with (8) Memory error to run on my PC (GPU with 6GB MEMORY)
             model.steps.load_image, num_parallel_calls=tf.data.experimental.AUTOTUNE).batch(4)  # 8)  # (16)
 
         for img, path in image_dataset:
@@ -254,7 +254,7 @@ class DataHelper:
             img_tensor = np.load(img_name.decode('utf-8') + '.npy')
             return img_tensor, cap
 
-        # deixa no mesmo tamanho, maximo 32
+        # Leaves the same size, maximum 32
         label_indexes = [label[:32] for label in label_indexes]
         label_indexes = tf.keras.preprocessing.sequence.pad_sequences(label_indexes, padding='post')
 

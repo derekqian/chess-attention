@@ -4980,7 +4980,7 @@ form{
   .bp3-running-text table th, table.bp3-html-table th{
     color:#182026;
     font-weight:600; }
-  
+
   .bp3-running-text table td,
   table.bp3-html-table td{
     color:#182026; }
@@ -14499,12 +14499,12 @@ a.anchor-link {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 }
             });
-        
+
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14547,7 +14547,7 @@ a.anchor-link {
 <span class="c1">#no.of threads each core is having</span>
 <span class="o">!</span>lscpu <span class="p">|</span> grep <span class="s1">&#39;Thread(s) per core&#39;</span>
 
-<span class="o">!</span>lscpu <span class="p">|</span> grep <span class="s2">&quot;L3 cache&quot;</span> 
+<span class="o">!</span>lscpu <span class="p">|</span> grep <span class="s2">&quot;L3 cache&quot;</span>
 
 <span class="c1">#if it had turbo boost it would&#39;ve shown Min and Max MHz also but it is only showing current frequency this means it always operates at 2.3GHz</span>
 <span class="o">!</span>lscpu <span class="p">|</span> grep <span class="s2">&quot;MHz&quot;</span>
@@ -14571,13 +14571,13 @@ a.anchor-link {
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>GPU 0: Tesla T4 (UUID: GPU-c3b3922f-9c76-7b31-78c7-0d0e979e551b)
-Fri Jan 22 21:18:15 2021       
+Fri Jan 22 21:18:15 2021
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 460.32.03    Driver Version: 418.67       CUDA Version: 10.1     |
 |-------------------------------+----------------------+----------------------+
@@ -14589,7 +14589,7 @@ Fri Jan 22 21:18:15 2021
 | N/A   67C    P8    11W /  70W |      0MiB / 15079MiB |      0%      Default |
 |                               |                      |                 ERR! |
 +-------------------------------+----------------------+----------------------+
-                                                                               
+
 +-----------------------------------------------------------------------------+
 | Processes:                                                                  |
 |  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
@@ -14639,7 +14639,7 @@ Avail
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14702,7 +14702,7 @@ Avail
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="kn">import</span> <span class="n">shuffle</span>
 <span class="kn">import</span> <span class="nn">re</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">json</span>
@@ -14714,7 +14714,7 @@ Avail
 <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
 <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
 <span class="kn">import</span> <span class="nn">random</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14729,7 +14729,7 @@ Avail
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14826,7 +14826,7 @@ Avail
   <span class="n">f</span><span class="o">=</span> <span class="nb">open</span><span class="p">(</span> <span class="n">path</span><span class="p">)</span>
   <span class="n">d</span><span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
   <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-  <span class="k">return</span> <span class="n">d</span> 
+  <span class="k">return</span> <span class="n">d</span>
 
 <span class="k">def</span> <span class="nf">show_image</span><span class="p">(</span> <span class="n">img</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span> <span class="s1">&#39;noname&#39;</span><span class="p">):</span>
   <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span> <span class="n">img</span><span class="p">)</span>
@@ -14846,7 +14846,7 @@ Avail
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14876,14 +14876,14 @@ Avail
 
   <span class="c1"># Choose the top 5000 words from the vocabulary</span>
   <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;building...&#39;</span><span class="p">)</span>
-  <span class="n">top_k</span> <span class="o">=</span> <span class="mi">5000</span>   <span class="c1"># para ajustar ao modelo antigo...</span>
+  <span class="n">top_k</span> <span class="o">=</span> <span class="mi">5000</span>   <span class="c1"># to fit the old model...</span>
   <span class="n">tokenizer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">preprocessing</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">Tokenizer</span><span class="p">(</span><span class="n">num_words</span><span class="o">=</span><span class="n">top_k</span><span class="p">,</span>
                                                     <span class="n">lower</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
                                                     <span class="n">oov_token</span><span class="o">=</span><span class="s2">&quot;&lt;unk&gt;&quot;</span><span class="p">,</span>
                                                     <span class="n">filters</span><span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
                                                     <span class="c1"># filters=&#39;!&quot;#$%&amp;()*+.,-/:;=?@[\]^_`{|}~ &#39;)</span>
 
-  <span class="c1">#forca a usar sempre uma lista com todas as words com 1 ocorrecia de cada word</span>
+  <span class="c1">#force to always use a list with all words with 1 occurrence of each word</span>
   <span class="n">tokenizer</span><span class="o">.</span><span class="n">fit_on_texts</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
   <span class="n">tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">[</span><span class="s1">&#39;&lt;pad&gt;&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
   <span class="n">tokenizer</span><span class="o">.</span><span class="n">index_word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&lt;pad&gt;&#39;</span>
@@ -14894,7 +14894,7 @@ Avail
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;total do vocabularario= &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">))</span>    <span class="c1"># expected 1578</span>
 <span class="c1"># print( &#39;considerados no encoding= &#39;, NUM_OF_WORDS)</span>
 
-<span class="n">VOCAB_SIZE</span><span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span> 
+<span class="n">VOCAB_SIZE</span><span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">word_index</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;VOCAB_SIZE&#39;</span><span class="p">,</span> <span class="n">VOCAB_SIZE</span><span class="p">)</span>
 </pre></div>
 
@@ -14910,7 +14910,7 @@ Avail
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -14948,10 +14948,10 @@ VOCAB_SIZE 180
 	<span class="c1"># labels= [cleanup( x).lower() for x in labels]</span>
 	<span class="n">labels</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&lt;start&gt; &#39;</span> <span class="o">+</span> <span class="n">label</span> <span class="o">+</span> <span class="s1">&#39; &lt;end&gt;&#39;</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">]</span>
 
-	<span class="c1"># poderia ser menor... mas pega os primeiros 10. Nem precisava restringir...</span>
+	<span class="c1"># It could be smaller ... but it takes the first 10. I didn't even have to restrict ...</span>
 	<span class="n">labels</span><span class="o">=</span> <span class="p">[</span><span class="n">label</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">:</span><span class="mi">16</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">]</span>
 
-	<span class="c1"># somente uma parte por enquanto</span>
+	<span class="c1"># Only one part for now</span>
 	<span class="k">if</span> <span class="n">SAMPLED</span><span class="p">:</span>
 		<span class="n">n</span><span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">image_files</span><span class="p">)</span><span class="o">*</span><span class="mf">0.80</span><span class="p">)</span>
 		<span class="n">combined</span><span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="nb">zip</span><span class="p">(</span> <span class="n">image_files</span><span class="p">,</span> <span class="n">labels</span><span class="p">))</span>
@@ -14962,7 +14962,7 @@ VOCAB_SIZE 180
 	<span class="n">label_indexes</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">texts_to_sequences</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
 	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
 		<span class="nb">print</span><span class="p">(</span> <span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s1">&#39;=&gt;&#39;</span><span class="p">,</span> <span class="n">label_indexes</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
- 
+
 	<span class="k">return</span> <span class="n">image_files</span><span class="p">,</span> <span class="n">label_indexes</span><span class="p">,</span> <span class="n">labels</span>
 
 <span class="c1">#shuffle</span>
@@ -14986,7 +14986,7 @@ VOCAB_SIZE 180
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -15034,8 +15034,8 @@ SAMPLED!!  size=  5521 5521
 <span class="c1">#</span>
 <span class="n">image_model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">applications</span><span class="o">.</span><span class="n">VGG16</span><span class="p">(</span><span class="n">include_top</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
                                                 <span class="n">weights</span><span class="o">=</span><span class="s1">&#39;imagenet&#39;</span><span class="p">,</span>
-                                                <span class="n">input_shape</span><span class="o">=</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">862</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>  <span class="c1"># =&gt; gera (16, 19, 2048)</span>
-                                                <span class="c1"># input_shape= (900, 678, 3))  # =&gt; gera (16, 19, 2048)</span>
+                                                <span class="n">input_shape</span><span class="o">=</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">862</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>  <span class="c1"># =&gt; generates (16, 19, 2048)</span>
+                                                <span class="c1"># input_shape= (900, 678, 3))  # =&gt; generates (16, 19, 2048)</span>
                                                 <span class="c1"># O input shape nao é obrigatorio, mas setando dá para</span>
                                                 <span class="c1"># ver o tamanho do output</span>
 <span class="n">new_input</span> <span class="o">=</span> <span class="n">image_model</span><span class="o">.</span><span class="n">input</span>
@@ -15055,7 +15055,7 @@ SAMPLED!!  size=  5521 5521
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -15091,52 +15091,52 @@ SAMPLED!!  size=  5521 5521
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Model: &#34;vgg16&#34;
 _________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param #
 =================================================================
-input_1 (InputLayer)         [(None, 200, 862, 3)]     0         
+input_1 (InputLayer)         [(None, 200, 862, 3)]     0
 _________________________________________________________________
-block1_conv1 (Conv2D)        (None, 200, 862, 64)      1792      
+block1_conv1 (Conv2D)        (None, 200, 862, 64)      1792
 _________________________________________________________________
-block1_conv2 (Conv2D)        (None, 200, 862, 64)      36928     
+block1_conv2 (Conv2D)        (None, 200, 862, 64)      36928
 _________________________________________________________________
-block1_pool (MaxPooling2D)   (None, 100, 431, 64)      0         
+block1_pool (MaxPooling2D)   (None, 100, 431, 64)      0
 _________________________________________________________________
-block2_conv1 (Conv2D)        (None, 100, 431, 128)     73856     
+block2_conv1 (Conv2D)        (None, 100, 431, 128)     73856
 _________________________________________________________________
-block2_conv2 (Conv2D)        (None, 100, 431, 128)     147584    
+block2_conv2 (Conv2D)        (None, 100, 431, 128)     147584
 _________________________________________________________________
-block2_pool (MaxPooling2D)   (None, 50, 215, 128)      0         
+block2_pool (MaxPooling2D)   (None, 50, 215, 128)      0
 _________________________________________________________________
-block3_conv1 (Conv2D)        (None, 50, 215, 256)      295168    
+block3_conv1 (Conv2D)        (None, 50, 215, 256)      295168
 _________________________________________________________________
-block3_conv2 (Conv2D)        (None, 50, 215, 256)      590080    
+block3_conv2 (Conv2D)        (None, 50, 215, 256)      590080
 _________________________________________________________________
-block3_conv3 (Conv2D)        (None, 50, 215, 256)      590080    
+block3_conv3 (Conv2D)        (None, 50, 215, 256)      590080
 _________________________________________________________________
-block3_pool (MaxPooling2D)   (None, 25, 107, 256)      0         
+block3_pool (MaxPooling2D)   (None, 25, 107, 256)      0
 _________________________________________________________________
-block4_conv1 (Conv2D)        (None, 25, 107, 512)      1180160   
+block4_conv1 (Conv2D)        (None, 25, 107, 512)      1180160
 _________________________________________________________________
-block4_conv2 (Conv2D)        (None, 25, 107, 512)      2359808   
+block4_conv2 (Conv2D)        (None, 25, 107, 512)      2359808
 _________________________________________________________________
-block4_conv3 (Conv2D)        (None, 25, 107, 512)      2359808   
+block4_conv3 (Conv2D)        (None, 25, 107, 512)      2359808
 _________________________________________________________________
-block4_pool (MaxPooling2D)   (None, 12, 53, 512)       0         
+block4_pool (MaxPooling2D)   (None, 12, 53, 512)       0
 _________________________________________________________________
-block5_conv1 (Conv2D)        (None, 12, 53, 512)       2359808   
+block5_conv1 (Conv2D)        (None, 12, 53, 512)       2359808
 _________________________________________________________________
-block5_conv2 (Conv2D)        (None, 12, 53, 512)       2359808   
+block5_conv2 (Conv2D)        (None, 12, 53, 512)       2359808
 _________________________________________________________________
-block5_conv3 (Conv2D)        (None, 12, 53, 512)       2359808   
+block5_conv3 (Conv2D)        (None, 12, 53, 512)       2359808
 _________________________________________________________________
-block5_pool (MaxPooling2D)   (None, 6, 26, 512)        0         
+block5_pool (MaxPooling2D)   (None, 6, 26, 512)        0
 =================================================================
 Total params: 14,714,688
 Trainable params: 14,714,688
@@ -15157,7 +15157,7 @@ None
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># -1 gera (None, 18, 21, 512)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># -1 generates (None, 18, 21, 512)</span>
 <span class="n">ATTENTION_SHAPE</span><span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">53</span><span class="p">)</span> <span class="c1">#(28,21)</span>
 <span class="n">FEATURES_SHAPE</span> <span class="o">=</span> <span class="mi">512</span>
 <span class="n">ATTENTION_FEATURES_SHAPE</span> <span class="o">=</span> <span class="n">ATTENTION_SHAPE</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">ATTENTION_SHAPE</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1">#16*19   # 308</span>
@@ -15185,7 +15185,7 @@ None
     <span class="c1"># img = tf.keras.applications.inception_v3.preprocess_input(img)</span>
     <span class="n">img</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">applications</span><span class="o">.</span><span class="n">vgg19</span><span class="o">.</span><span class="n">preprocess_input</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">img</span><span class="p">,</span> <span class="n">image_path</span>
-	
+
 <span class="k">def</span> <span class="nf">build_cache_for</span><span class="p">(</span> <span class="n">img_name_vector</span><span class="p">):</span>
   <span class="n">encode_train</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">img_name_vector</span><span class="p">))</span>
 
@@ -15202,8 +15202,8 @@ None
     <span class="k">for</span> <span class="n">bf</span><span class="p">,</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">batch_features</span><span class="p">,</span> <span class="n">path</span><span class="p">):</span>
       <span class="n">path_of_feature</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
       <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path_of_feature</span><span class="p">,</span> <span class="n">bf</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>
-	  
-	  
+
+
 <span class="n">build_cache_for</span><span class="p">(</span> <span class="n">train_img_names</span><span class="p">)</span>
 <span class="n">build_cache_for</span><span class="p">(</span> <span class="n">valid_img_names</span><span class="p">)</span>
 </pre></div>
@@ -15240,10 +15240,10 @@ None
 <span class="k">def</span> <span class="nf">map_func</span><span class="p">(</span><span class="n">img_name</span><span class="p">,</span> <span class="n">cap</span><span class="p">):</span>
   <span class="n">img_tensor</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">img_name</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.npy&#39;</span><span class="p">)</span>
   <span class="k">return</span> <span class="n">img_tensor</span><span class="p">,</span> <span class="n">cap</span>
-  
+
 
 <span class="k">def</span> <span class="nf">build_dataset</span><span class="p">(</span> <span class="n">img_names</span><span class="p">,</span> <span class="n">label_indexes</span><span class="p">):</span>
-  <span class="c1"># deixa no mesmo tamanho, maximo 32</span>
+  <span class="c1"># Leaves the same size, maximum 32</span>
   <span class="n">label_indexes</span><span class="o">=</span> <span class="p">[</span><span class="n">label</span><span class="p">[:</span><span class="mi">32</span><span class="p">]</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">label_indexes</span><span class="p">]</span>
   <span class="n">label_indexes</span><span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">preprocessing</span><span class="o">.</span><span class="n">sequence</span><span class="o">.</span><span class="n">pad_sequences</span><span class="p">(</span><span class="n">label_indexes</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;post&#39;</span><span class="p">)</span>
 
@@ -15259,7 +15259,7 @@ None
   <span class="n">dataset</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">prefetch</span><span class="p">(</span><span class="n">buffer_size</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">experimental</span><span class="o">.</span><span class="n">AUTOTUNE</span><span class="p">)</span>
   <span class="k">return</span> <span class="n">dataset</span>
 
-  
+
 <span class="n">train_dataset</span><span class="o">=</span> <span class="n">build_dataset</span><span class="p">(</span> <span class="n">train_img_names</span><span class="p">,</span> <span class="n">train_label_indexes</span><span class="p">)</span>
 <span class="n">valid_dataset</span><span class="o">=</span> <span class="n">build_dataset</span><span class="p">(</span> <span class="n">valid_img_names</span><span class="p">,</span> <span class="n">valid_label_indexes</span><span class="p">)</span>
 
@@ -15312,7 +15312,7 @@ None
     <span class="c1"># print( &#39;BahdanauAttention.hidden_with_time_axis =&gt;&#39;, hidden_with_time_axis.shape) #(64, 1, 512)</span>
 
     <span class="c1"># score shape == (batch_size, 64, hidden_size)</span>
-    <span class="n">score</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">W1</span><span class="p">(</span><span class="n">features</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">W2</span><span class="p">(</span><span class="n">hidden_with_time_axis</span><span class="p">))</span> 
+    <span class="n">score</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">W1</span><span class="p">(</span><span class="n">features</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">W2</span><span class="p">(</span><span class="n">hidden_with_time_axis</span><span class="p">))</span>
     <span class="c1"># print( &#39;BahdanauAttention.score =&gt;&#39;, score.shape)   #(64, 64, 512)</span>
 
     <span class="c1"># attention_weights shape == (batch_size, 64, 1)</span>
@@ -15353,7 +15353,7 @@ None
                                   <span class="c1">#  return_sequences=True) </span>
         <span class="bp">self</span><span class="o">.</span><span class="n">bgru</span><span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Bidirectional</span><span class="p">(</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">GRU</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">units</span><span class="p">,</span>
                                        <span class="n">dropout</span><span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
-                                   <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span> 
+                                   <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">drop</span><span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span> <span class="mf">0.2</span><span class="p">)</span>
         <span class="c1"># self.gru= tf.keras.layers.GRU(self.units,</span>
         <span class="c1">#                            return_sequences=True)</span>
@@ -15443,7 +15443,7 @@ None
     <span class="c1"># x = self.bn1(x)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-    <span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span> 
+    <span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
     <span class="c1"># x = self.fc2(x) # 256</span>
     <span class="c1"># x = self.bn2(x)</span>
     <span class="c1"># x = self.drop2(x)</span>
@@ -15516,7 +15516,7 @@ None
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
      </div>
@@ -15550,7 +15550,7 @@ None
   <span class="n">ckpt</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">Checkpoint</span><span class="p">(</span><span class="n">encoder</span><span class="o">=</span><span class="n">encoder</span><span class="p">,</span>
                               <span class="n">decoder</span><span class="o">=</span><span class="n">decoder</span><span class="p">,</span>
                               <span class="n">optimizer</span> <span class="o">=</span> <span class="n">optimizer</span><span class="p">)</span>
-                              
+
   <span class="n">checkpoint_path</span> <span class="o">=</span> <span class="s2">&quot;/content/drive/My Drive/mestrado/&quot;</span><span class="o">+</span><span class="n">checkdir</span><span class="o">+</span><span class="s2">&quot;/checkpoints/train&quot;</span>
   <span class="n">ckpt_manager</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">train</span><span class="o">.</span><span class="n">CheckpointManager</span><span class="p">(</span><span class="n">ckpt</span><span class="p">,</span> <span class="n">checkpoint_path</span><span class="p">,</span> <span class="n">max_to_keep</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
@@ -15593,7 +15593,7 @@ None
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -15655,7 +15655,7 @@ None
   <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Acc&#39;</span><span class="p">)</span>
   <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Acc Plot&#39;</span><span class="p">)</span>
   <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">legend</span><span class="p">((</span><span class="s1">&#39;train acc&#39;</span><span class="p">,</span><span class="s1">&#39;validation acc&#39;</span><span class="p">))</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>  
+  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15684,7 +15684,7 @@ None
   <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">()</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
     <span class="n">features</span> <span class="o">=</span> <span class="n">encoder</span><span class="p">(</span><span class="n">img_tensor</span><span class="p">)</span>
 
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">train_length</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span> 
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">train_length</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
       <span class="n">predictions</span><span class="p">,</span> <span class="n">hidden</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">decoder</span><span class="p">(</span><span class="n">dec_input</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">hidden</span><span class="p">)</span>
 
       <span class="c1"># tf.keras.backend.print_tensor( predictions)</span>
@@ -15776,16 +15776,16 @@ None
   <span class="k">global</span> <span class="n">_epoch</span>
   <span class="k">global</span> <span class="n">_best_loss</span>
 
-  <span class="n">MAX_EPOCH</span><span class="o">=</span><span class="mi">200</span> 
+  <span class="n">MAX_EPOCH</span><span class="o">=</span><span class="mi">200</span>
 
   <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;-- loss_target=&gt;&quot;</span><span class="p">,</span> <span class="n">loss_target</span><span class="p">,</span> <span class="s2">&quot; train_length=&quot;</span><span class="p">,</span> <span class="n">train_length</span><span class="p">)</span>
   <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">MAX_EPOCH</span><span class="p">):</span>
       <span class="n">_epoch</span><span class="o">+=</span> <span class="mi">1</span>
       <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
       <span class="n">total_loss</span> <span class="o">=</span> <span class="mi">0</span>
-      
-      <span class="n">train_acc_metric</span><span class="o">.</span><span class="n">reset_states</span><span class="p">()</span>
-      <span class="n">valid_acc_metric</span><span class="o">.</span><span class="n">reset_states</span><span class="p">()</span>
+
+      <span class="n">train_acc_metric</span><span class="o">.</span><span class="n">reset_state</span><span class="p">()</span>
+      <span class="n">valid_acc_metric</span><span class="o">.</span><span class="n">reset_state</span><span class="p">()</span>
 
       <span class="c1">#</span>
       <span class="c1"># training loop</span>
@@ -15821,12 +15821,12 @@ None
 
       <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Epoch </span><span class="si">{}</span><span class="s1"> Loss </span><span class="si">{:.6f}</span><span class="s1">  acc: </span><span class="si">{:.4f}</span><span class="s1"> [ Validation Loss </span><span class="si">{:.6f}</span><span class="s1"> valid_acc: </span><span class="si">{:.4f}</span><span class="s1"> ]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
                                   <span class="n">_epoch</span><span class="p">,</span>
-                                  <span class="n">train_loss</span><span class="p">,</span> 
+                                  <span class="n">train_loss</span><span class="p">,</span>
                                   <span class="n">train_acc</span><span class="p">,</span>
-                                  <span class="n">valid_loss</span><span class="p">,</span> 
+                                  <span class="n">valid_loss</span><span class="p">,</span>
                                   <span class="n">valid_acc</span><span class="p">))</span>
       <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Time taken for 1 epoch </span><span class="si">{}</span><span class="s1"> sec</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span><span class="p">))</span>
-      <span class="n">print_time</span><span class="p">()</span>    
+      <span class="n">print_time</span><span class="p">()</span>
 
 
       <span class="c1"># </span>
@@ -15835,7 +15835,7 @@ None
       <span class="k">if</span> <span class="n">loss_target</span><span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="p">(</span><span class="n">train_loss</span><span class="p">)</span><span class="o">&lt;=</span> <span class="n">loss_target</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Target reached! stop!&quot;</span><span class="p">,</span> <span class="s1">&#39; len= &#39;</span><span class="p">,</span> <span class="n">train_length</span><span class="p">)</span>
 
-        <span class="n">ckpt_manager</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>  
+        <span class="n">ckpt_manager</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
         <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;saved checkpoint!&#39;</span><span class="p">,</span> <span class="n">ckpt_manager</span><span class="o">.</span><span class="n">latest_checkpoint</span><span class="p">)</span>
         <span class="n">plot_metrics</span><span class="p">()</span>
         <span class="k">return</span> <span class="kc">True</span>
@@ -15844,18 +15844,18 @@ None
         <span class="n">_best_loss</span><span class="o">=</span> <span class="n">train_loss</span>
         <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;New record! _best_loss= &#39;</span><span class="p">,</span> <span class="n">_best_loss</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">train_loss</span><span class="o">&lt;</span> <span class="n">SAVE_IF_BETTER_THAN_LOSS</span> <span class="p">:</span>
-            <span class="n">ckpt_manager</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>  
+            <span class="n">ckpt_manager</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
             <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;saved checkpoint!&#39;</span><span class="p">,</span> <span class="n">ckpt_manager</span><span class="o">.</span><span class="n">latest_checkpoint</span><span class="p">)</span>
 
       <span class="c1"># se validacao estoura significa que esta desaprendendo attention, portanto faz abort</span>
       <span class="c1"># TODO: Como implementar early stop?</span>
-      <span class="k">if</span> <span class="n">valid_loss</span><span class="o">&gt;=</span> <span class="n">val_loss_limit</span><span class="p">:</span>   
+      <span class="k">if</span> <span class="n">valid_loss</span><span class="o">&gt;=</span> <span class="n">val_loss_limit</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Oops, desaprendendo. Aborta sem salvar!&quot;</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">False</span>
 
   <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;epoch exceeded&#39;</span><span class="p">)</span>
   <span class="k">return</span> <span class="kc">False</span>
-    
+
 </pre></div>
 
      </div>
@@ -15875,7 +15875,7 @@ None
   <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;len=&#39;</span><span class="p">,</span> <span class="n">_length</span><span class="p">,</span> <span class="s1">&#39; try_count=&#39;</span><span class="p">,</span> <span class="n">retry_count</span><span class="p">)</span>
     <span class="n">ok</span><span class="o">=</span> <span class="n">train_more</span><span class="p">(</span> <span class="n">loss_target</span><span class="p">,</span> <span class="n">_length</span><span class="p">,</span> <span class="n">valid_loss_limit</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">ok</span><span class="p">:</span> 
+    <span class="k">if</span> <span class="n">ok</span><span class="p">:</span>
       <span class="k">return</span> <span class="kc">True</span>
 
     <span class="k">if</span> <span class="n">retry_count</span><span class="o">&gt;=</span> <span class="n">MAX_RETRY</span><span class="p">:</span>
@@ -15917,7 +15917,7 @@ None
     <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="c1"># result_top5 = []</span>
 
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">_length</span><span class="p">):</span> 
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">_length</span><span class="p">):</span>
         <span class="n">predictions</span><span class="p">,</span> <span class="n">hidden</span><span class="p">,</span> <span class="n">attention_weights</span> <span class="o">=</span> <span class="n">decoder</span><span class="p">(</span><span class="n">dec_input</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">hidden</span><span class="p">)</span>
 
         <span class="n">attention_plot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">attention_weights</span><span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">))</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
@@ -15952,7 +15952,7 @@ None
 
   <span class="n">len_result</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
   <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">len_result</span><span class="p">):</span>
-    <span class="n">temp_att</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">attention_plot</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">ATTENTION_SHAPE</span><span class="p">)</span> 
+    <span class="n">temp_att</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">attention_plot</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">ATTENTION_SHAPE</span><span class="p">)</span>
     <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">expected</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">l</span><span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span> <span class="n">expected</span><span class="p">):</span>
       <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">fontsize</span><span class="o">=</span> <span class="mi">40</span><span class="p">)</span>
@@ -15981,7 +15981,7 @@ None
 
   <span class="c1"># TODO: Pode estar errado...</span>
   <span class="n">m</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">metrics</span><span class="o">.</span><span class="n">Accuracy</span><span class="p">()</span>
-  <span class="n">m</span><span class="o">.</span><span class="n">update_state</span><span class="p">(</span> 
+  <span class="n">m</span><span class="o">.</span><span class="n">update_state</span><span class="p">(</span>
           <span class="n">tokenizer</span><span class="o">.</span><span class="n">texts_to_sequences</span><span class="p">(</span><span class="n">label_words</span><span class="p">)[</span><span class="mi">1</span><span class="p">:</span><span class="n">train_length</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span>
           <span class="n">tokenizer</span><span class="o">.</span><span class="n">texts_to_sequences</span><span class="p">(</span><span class="n">result</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="n">train_length</span><span class="p">])</span>
           <span class="c1"># [tokenizer.word_index[w] for w in label_words][1:train_length+1], </span>
@@ -15994,11 +15994,11 @@ None
 
 <span class="k">def</span> <span class="nf">evaluate_train</span><span class="p">(</span> <span class="n">n</span><span class="p">,</span> <span class="n">train_length</span><span class="p">):</span>
   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-    <span class="n">evaluate_random_from_dataset</span><span class="p">(</span> <span class="n">train_img_names</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">train_label_words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">train_length</span><span class="p">)</span> 
+    <span class="n">evaluate_random_from_dataset</span><span class="p">(</span> <span class="n">train_img_names</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">train_label_words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">train_length</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">evaluate_valid</span><span class="p">(</span> <span class="n">n</span><span class="p">,</span> <span class="n">train_length</span><span class="p">):</span>
   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-    <span class="n">evaluate_random_from_dataset</span><span class="p">(</span> <span class="n">valid_img_names</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">valid_label_words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">train_length</span><span class="p">)</span> 
+    <span class="n">evaluate_random_from_dataset</span><span class="p">(</span> <span class="n">valid_img_names</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">valid_label_words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">train_length</span><span class="p">)</span>
 
 <span class="c1">#evaluate_train(1, 32)</span>
 </pre></div>
@@ -16016,7 +16016,7 @@ None
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">evaluate_full_valid_dataset</span><span class="p">(</span><span class="n">_length</span><span class="p">):</span>
     <span class="n">total_loss</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">valid_acc_metric</span><span class="o">.</span><span class="n">reset_states</span><span class="p">()</span>
+    <span class="n">valid_acc_metric</span><span class="o">.</span><span class="n">reset_state</span><span class="p">()</span>
     <span class="k">for</span> <span class="p">(</span><span class="n">batch</span><span class="p">,</span> <span class="p">(</span><span class="n">img_tensor</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">valid_dataset</span><span class="p">):</span>
         <span class="n">batch_loss</span><span class="p">,</span> <span class="n">t_loss</span> <span class="o">=</span> <span class="n">test_step</span><span class="p">(</span><span class="n">img_tensor</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">_length</span><span class="p">)</span>
         <span class="n">total_loss</span> <span class="o">+=</span> <span class="n">t_loss</span>
@@ -16025,7 +16025,7 @@ None
     <span class="n">valid_acc</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">valid_acc_metric</span><span class="o">.</span><span class="n">result</span><span class="p">())</span>
     <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;len </span><span class="si">{}</span><span class="s1"> Validation Loss </span><span class="si">{:.6f}</span><span class="s1"> valid_acc: </span><span class="si">{:.4f}</span><span class="s1"> ]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
                         <span class="n">_length</span><span class="p">,</span>
-                        <span class="n">valid_loss</span><span class="p">,</span> 
+                        <span class="n">valid_loss</span><span class="p">,</span>
                         <span class="n">valid_acc</span><span class="p">))</span>
 </pre></div>
 
@@ -16061,7 +16061,7 @@ None
 
 <span class="k">def</span> <span class="nf">cir_word</span><span class="p">(</span> <span class="n">hp</span><span class="p">,</span> <span class="n">gt</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">distance</span><span class="o">.</span><span class="n">edit_distance</span><span class="p">(</span><span class="n">hp</span><span class="p">,</span> <span class="n">gt</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span> <span class="n">gt</span><span class="p">)</span>
-	
+
 <span class="k">def</span> <span class="nf">cir_line</span><span class="p">(</span> <span class="n">expected</span><span class="p">,</span> <span class="n">predicted</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">reduce_mean</span><span class="p">(</span> <span class="p">[</span><span class="n">cir_word</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span> <span class="n">expected</span><span class="p">,</span> <span class="n">predicted</span><span class="p">)])</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
 
@@ -16097,11 +16097,11 @@ None
     <span class="k">return</span> <span class="n">test_images</span><span class="p">[:</span><span class="nb">max</span><span class="p">],</span> <span class="n">test_labels</span><span class="p">[:</span><span class="nb">max</span><span class="p">]</span>
 
 <span class="k">def</span> <span class="nf">load_test</span><span class="p">():</span>
-  <span class="k">return</span> <span class="n">load_from_path</span><span class="p">(</span> <span class="s1">&#39;/content/new-random-8lines--v1--test-only-2lines/test&#39;</span><span class="p">)</span> 
+  <span class="k">return</span> <span class="n">load_from_path</span><span class="p">(</span> <span class="s1">&#39;/content/new-random-8lines--v1--test-only-2lines/test&#39;</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">load_test_2</span><span class="p">():</span>
-  <span class="k">return</span> <span class="n">load_from_path</span><span class="p">(</span> <span class="s1">&#39;/content/new-random-8lines--v1--test-only-2lines/test--v2&#39;</span><span class="p">)</span> 
-  
+  <span class="k">return</span> <span class="n">load_from_path</span><span class="p">(</span> <span class="s1">&#39;/content/new-random-8lines--v1--test-only-2lines/test--v2&#39;</span><span class="p">)</span>
+
 <span class="k">def</span> <span class="nf">evaluate_all_data</span><span class="p">(</span><span class="n">images</span><span class="p">,</span><span class="n">labels</span><span class="p">,</span><span class="n">maxlen</span><span class="p">,</span><span class="n">no_teach</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
   <span class="n">result_ac</span><span class="o">=</span> <span class="p">[]</span>
   <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;EVALUATING ALL DATA&#39;</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span> <span class="n">images</span><span class="p">))</span>
@@ -16131,12 +16131,12 @@ None
     <span class="c1"># acuracia para cada teste, até o tamanho atual</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span> <span class="n">result</span><span class="p">)):</span>
       <span class="n">uselen</span><span class="o">=</span> <span class="nb">min</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="nb">len</span><span class="p">(</span> <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="n">_len</span><span class="p">)</span>
-      <span class="n">m</span><span class="o">.</span><span class="n">update_state</span><span class="p">(</span> 
+      <span class="n">m</span><span class="o">.</span><span class="n">update_state</span><span class="p">(</span>
               <span class="n">tokenizer</span><span class="o">.</span><span class="n">texts_to_sequences</span><span class="p">(</span><span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">])[:</span><span class="n">uselen</span><span class="p">],</span>
               <span class="n">tokenizer</span><span class="o">.</span><span class="n">texts_to_sequences</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">])[:</span><span class="n">uselen</span><span class="p">])</span>
               <span class="c1"># [tokenizer.word_index[w] if w in tokenizer.word_index else 0 for w in labels[i]][:uselen], </span>
               <span class="c1"># [tokenizer.word_index[w] if w in tokenizer.word_index else 0  for w in result[i]][:uselen])</span>
-    
+
     <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;len&#39;</span><span class="p">,</span> <span class="n">_len</span><span class="p">,</span> <span class="s1">&#39;accuracy&#39;</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span> <span class="n">m</span><span class="o">.</span><span class="n">result</span><span class="p">()),</span> <span class="s1">&#39;cir&#39;</span><span class="p">,</span> <span class="n">cir_set</span><span class="p">(</span> <span class="n">labels</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">_len</span><span class="p">))</span>
     <span class="n">result_ac</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="nb">float</span><span class="p">(</span> <span class="n">m</span><span class="o">.</span><span class="n">result</span><span class="p">()))</span>
 
@@ -16150,7 +16150,7 @@ None
   <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;checkpoint: &#39;</span><span class="o">+</span> <span class="n">checkpoint</span><span class="p">)</span>
   <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="n">check_name</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">check_name</span> <span class="ow">in</span> <span class="n">result_acc</span><span class="p">])</span>
   <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-  
+
 <span class="k">def</span> <span class="nf">make_evaluations_test_set</span><span class="p">(</span><span class="n">_len</span><span class="p">):</span>
   <span class="c1"># for check_dir, no_teach in checkpoints:</span>
     <span class="c1"># print( &#39;checkpoint&#39;, check_dir)</span>
@@ -16197,7 +16197,7 @@ None
       <span class="nb">print</span><span class="p">(</span> <span class="s1">&#39;numero de tentativas excedido sem sucesso. Abort&#39;</span><span class="p">)</span>
       <span class="k">assert</span> <span class="kc">False</span>
 
-    <span class="n">print_time</span><span class="p">()</span>    
+    <span class="n">print_time</span><span class="p">()</span>
     <span class="k">try</span><span class="p">:</span>
       <span class="n">evaluate_train</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">_len</span><span class="p">)</span>
       <span class="n">evaluate_valid</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">_len</span><span class="p">)</span>
@@ -16218,7 +16218,7 @@ None
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16252,7 +16252,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16268,7 +16268,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16284,7 +16284,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16299,7 +16299,7 @@ predicted= [&#39;Qe2&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16315,7 +16315,7 @@ predicted= [&#39;Qe2&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16329,7 +16329,7 @@ predicted= [&#39;Ne1&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16345,7 +16345,7 @@ predicted= [&#39;Ne1&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16362,7 +16362,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16378,7 +16378,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16393,7 +16393,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16409,7 +16409,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16424,7 +16424,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16440,7 +16440,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16455,7 +16455,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16471,7 +16471,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16486,7 +16486,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16502,7 +16502,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16515,7 +16515,7 @@ len 1 accuracy 0.8421052694320679 cir 0.0877193
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16531,7 +16531,7 @@ len 1 accuracy 0.8421052694320679 cir 0.0877193
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16565,7 +16565,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16581,7 +16581,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16597,7 +16597,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16612,7 +16612,7 @@ predicted= [&#39;Qe2&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16628,7 +16628,7 @@ predicted= [&#39;Qe2&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16642,7 +16642,7 @@ predicted= [&#39;Ne1&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16658,7 +16658,7 @@ predicted= [&#39;Ne1&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16675,7 +16675,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16691,7 +16691,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16706,7 +16706,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16722,7 +16722,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16737,7 +16737,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16753,7 +16753,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16768,7 +16768,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16784,7 +16784,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16799,7 +16799,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16815,7 +16815,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16828,7 +16828,7 @@ len 1 accuracy 0.8508771657943726 cir 0.07309942
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16844,7 +16844,7 @@ len 1 accuracy 0.8508771657943726 cir 0.07309942
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16878,7 +16878,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16894,7 +16894,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16910,7 +16910,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16925,7 +16925,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16941,7 +16941,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16955,7 +16955,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16971,7 +16971,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -16988,7 +16988,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17004,7 +17004,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17019,7 +17019,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17035,7 +17035,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17050,7 +17050,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17066,7 +17066,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17081,7 +17081,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17097,7 +17097,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17112,7 +17112,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17128,7 +17128,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17142,7 +17142,7 @@ len 2 accuracy 0.8377193212509155 cir 0.10672516
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17158,7 +17158,7 @@ len 2 accuracy 0.8377193212509155 cir 0.10672516
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17192,7 +17192,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17208,7 +17208,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17224,7 +17224,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17239,7 +17239,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17255,7 +17255,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17269,7 +17269,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17285,7 +17285,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17302,7 +17302,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17318,7 +17318,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17333,7 +17333,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17349,7 +17349,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17364,7 +17364,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17380,7 +17380,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17395,7 +17395,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17411,7 +17411,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17426,7 +17426,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17442,7 +17442,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17456,7 +17456,7 @@ len 2 accuracy 0.8070175647735596 cir 0.10599416
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17472,7 +17472,7 @@ len 2 accuracy 0.8070175647735596 cir 0.10599416
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17506,7 +17506,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17522,7 +17522,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17538,7 +17538,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17553,7 +17553,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;, &#39;exf6&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17569,7 +17569,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;, &#39;exf6&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17583,7 +17583,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;, &#39;Ne1&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17599,7 +17599,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;, &#39;Ne1&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17616,7 +17616,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17632,7 +17632,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17647,7 +17647,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17663,7 +17663,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17678,7 +17678,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17694,7 +17694,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17709,7 +17709,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17725,7 +17725,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17740,7 +17740,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17756,7 +17756,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17771,7 +17771,7 @@ len 3 accuracy 0.8128654956817627 cir 0.11354777
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17787,7 +17787,7 @@ len 3 accuracy 0.8128654956817627 cir 0.11354777
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17821,7 +17821,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17837,7 +17837,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17853,7 +17853,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17868,7 +17868,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;, &#39;exf6&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17884,7 +17884,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;, &#39;exf6&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17898,7 +17898,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;, &#39;Ne1&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17914,7 +17914,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;, &#39;Ne1&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17931,7 +17931,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17947,7 +17947,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17962,7 +17962,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17978,7 +17978,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -17993,7 +17993,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18009,7 +18009,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18024,7 +18024,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18040,7 +18040,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18055,7 +18055,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18071,7 +18071,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18086,7 +18086,7 @@ len 3 accuracy 0.8040935397148132 cir 0.12451267
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18102,7 +18102,7 @@ len 3 accuracy 0.8040935397148132 cir 0.12451267
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18136,7 +18136,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18152,7 +18152,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18168,7 +18168,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18183,7 +18183,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;, &#39;exf6&#39;, &#39;c4&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18199,7 +18199,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;, &#39;exf6&#39;, &#39;c4&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18213,7 +18213,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;, &#39;Ne1&#39;, &#39;cxd6&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18229,7 +18229,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;, &#39;Ne1&#39;, &#39;cxd6&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18246,7 +18246,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18262,7 +18262,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18277,7 +18277,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18293,7 +18293,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18308,7 +18308,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18324,7 +18324,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18339,7 +18339,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18355,7 +18355,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18370,7 +18370,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18386,7 +18386,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18402,7 +18402,7 @@ len 4 accuracy 0.8026315569877625 cir 0.12792398
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18418,7 +18418,7 @@ len 4 accuracy 0.8026315569877625 cir 0.12792398
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18452,7 +18452,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18468,7 +18468,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18484,7 +18484,7 @@ saved checkpoint! /content/drive/My Drive/mestrado/v141/try13-ds034-v4/1006/chec
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18499,7 +18499,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;, &#39;exf6&#39;, &#39;c4&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18515,7 +18515,7 @@ predicted= [&#39;Qe2&#39;, &#39;Qe2&#39;, &#39;exf6&#39;, &#39;c4&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18529,7 +18529,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;, &#39;Ne1&#39;, &#39;cxd6&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18545,7 +18545,7 @@ predicted= [&#39;Ne1&#39;, &#39;Rc8&#39;, &#39;Ne1&#39;, &#39;cxd6&#39;]
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18562,7 +18562,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18578,7 +18578,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;e6&#39;, &#39;d4&#39;,
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18593,7 +18593,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18609,7 +18609,7 @@ expected [&#39;e4&#39;, &#39;c5&#39;, &#39;Nf3&#39;, &#39;d6&#39;, &#39;Bb5+&#39
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18624,7 +18624,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18640,7 +18640,7 @@ expected [&#39;Nf3&#39;, &#39;Nf6&#39;, &#39;g3&#39;, &#39;d5&#39;, &#39;c4&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18655,7 +18655,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18671,7 +18671,7 @@ expected [&#39;c4&#39;, &#39;c5&#39;, &#39;Nc3&#39;, &#39;Nc6&#39;, &#39;g3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18686,7 +18686,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18702,7 +18702,7 @@ expected [&#39;d4&#39;, &#39;d5&#39;, &#39;Bf4&#39;, &#39;Nf6&#39;, &#39;e3&#39;
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
@@ -18718,7 +18718,7 @@ len 4 accuracy 0.8355262875556946 cir 0.0941155
 
 <div class="jp-OutputArea-child">
 
-    
+
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 

@@ -19,13 +19,13 @@ The version of python used was 3.9.6.
     This folder contains some fixed data used by the model.
 
 **dataset:**
-    This folder contains training dataset. 
-    Addicional dataset can be downloaded from 
+    This folder contains training dataset.
+    Addicional dataset can be downloaded from
         https://drive.google.com/drive/folders/1PHTbbP-QrDKC4hjz55EHyredKVGBq4OZ?usp=sharing.
     (dataset.zip)
 
 **dataset-builder**:
-    This folder intention is for dataset building. All the necessary artefacts can be downloaded from 
+    This folder intention is for dataset building. All the necessary artefacts can be downloaded from
         https://drive.google.com/drive/folders/1PHTbbP-QrDKC4hjz55EHyredKVGBq4OZ?usp=sharing.
     (dataset-builder.zip)
 
@@ -67,11 +67,11 @@ from IPython.display import Image
     Found GPU at: /device:GPU:0
     Found GPU at: /device:GPU:0
     2.5.0
-    
+
 
 
 ```python
-model = ModelPredictController(NUM_LINHAS=8, NO_TEACH=False);
+model = ModelPredictController(NUM_LINES=8, NO_TEACH=False);
 ```
 
 
@@ -80,10 +80,10 @@ model.load()
 ```
 
     building...
-    total do vocabulario=  179
+    total vocabulary=  179
     VOCAB_SIZE 180
-    Shape da imagem ao final da CNN:  (None, 50, 53, 512)
-    
+    Shape of the image at the end of CNN:  (None, 50, 53, 512)
+
 
 
 ```python
@@ -91,7 +91,7 @@ model.restoreFromCheckpointName('train_comparativo_20211106_handwritten_teacher_
 ```
 
     restore from pretraining  ../checkpoints\train_comparativo_20211106_handwritten_teacher_10k_---8linhas-handwritten--10k\ckpt-2 ...
-    
+
 
 
 ```python
@@ -107,45 +107,45 @@ model.evaluateForTest('test-8lines-samples', plot_attention=True, _len= 16)
     --------------------<  0 :  __scan1037.jpg >------------------------------
     len: 16 acc: 0.5 cer 0.6510416 file:  ../data/test-data/test-8lines-samples\images\__scan1037.jpg
     ../data/test-data/test-8lines-samples\images\__scan1037.jpg
-    
 
 
-    
+
+
 ![png](README.md.figures/output_5_1.png)
-    
+
 
 
     --------------------<  1 :  __scan1094.jpg >------------------------------
     len: 16 acc: 0.75 cer 0.13541667 file:  ../data/test-data/test-8lines-samples\images\__scan1094.jpg
     ../data/test-data/test-8lines-samples\images\__scan1094.jpg
-    
 
 
-    
+
+
 ![png](README.md.figures/output_5_3.png)
-    
+
 
 
     --------------------<  2 :  carnaval_0004_fullpage.jpg >------------------------------
     len: 16 acc: 0.8125 cer 0.10416667 file:  ../data/test-data/test-8lines-samples\images\carnaval_0004_fullpage.jpg
     ../data/test-data/test-8lines-samples\images\carnaval_0004_fullpage.jpg
-    
 
 
-    
+
+
 ![png](README.md.figures/output_5_5.png)
-    
+
 
 
     --------------------<  3 :  carnaval_0287_fullpage.jpg >------------------------------
     len: 16 acc: 1.0 cer 0.0 file:  ../data/test-data/test-8lines-samples\images\carnaval_0287_fullpage.jpg
     ../data/test-data/test-8lines-samples\images\carnaval_0287_fullpage.jpg
-    
 
 
-    
+
+
 ![png](README.md.figures/output_5_7.png)
-    
+
 
 
 

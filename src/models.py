@@ -178,21 +178,21 @@ class RNN_Decoder(tf.keras.Model):
 
 class AttentionEncoderDecoderModel:
     def __init__(self,
-                 NUM_LINHAS=2,
+                 NUM_LINES=2,
                  NO_TEACH=True,
                  ):
-        # -1 gera (None, 18, 21, 512)
-        if NUM_LINHAS == 2:
+        # -1 generates (None, 18, 21, 512)
+        if NUM_LINES == 2:
             self.ATTENTION_SHAPE = (12, 53)
             self.INPUT_SHAPE = (200, 862)
-        elif NUM_LINHAS == 8:
+        elif NUM_LINES == 8:
             self.ATTENTION_SHAPE = (50, 53)
             self.INPUT_SHAPE = (800, 862)
         else:
-            raise NameError("Suporta somente 2 e 8 linhas")
+            raise NameError("Supports only 2 and 8 lines")
 
         if "FORCE_INPUT_SIZE" in config:
-            print("\nUsa FORCE_INPUT_SIZE informada em config.py", json.dumps(config["FORCE_INPUT_SIZE"]), "\n")
+            print("\nUses FORCE_INPUT_SIZE specified in config.py", json.dumps(config["FORCE_INPUT_SIZE"]), "\n")
             self.ATTENTION_SHAPE = config["FORCE_INPUT_SIZE"]["ATTENTION_SHAPE"]
             self.INPUT_SHAPE = config["FORCE_INPUT_SIZE"]["INPUT_SHAPE"]
 
@@ -206,7 +206,7 @@ class AttentionEncoderDecoderModel:
         self.TRAIN_LENGTH = 16
         # self = Config()
         self.tokenizer, self.VOCAB_SIZE = TokenizerBuilder().build()
-        assert self.VOCAB_SIZE == 180, 'Tamanho do vocabulario não confere!'
+        assert self.VOCAB_SIZE == 180, 'Vocabulary size does not match!'
 
         self.image_model = None
         self.encoder = None
@@ -220,13 +220,13 @@ class AttentionEncoderDecoderModel:
         self.image_model = tf.keras.applications.VGG16(include_top=False,
                                                        weights='imagenet',
                                                        input_shape=(self.INPUT_SHAPE[0], self.INPUT_SHAPE[1],
-                                                                    3))  # => gera (16, 19, 2048)
-        # input_shape= (900, 678, 3))  # => gera (16, 19, 2048)
-        # O input shape nao é obrigatório, mas setando dá para
-        # ver o tamanho do output
+                                                                    3))  # => generates (16, 19, 2048)
+        # input_shape= (900, 678, 3))  # => generates (16, 19, 2048)
+        # The input shape is not mandatory, but setting it allows you to see the size of the output.
+        # 64x2, 128x2, 256x3, 512x3, 512x3
         new_input = self.image_model.input
         hidden_layer = self.image_model.layers[-2].output
-        print("Shape da imagem ao final da CNN: ", self.image_model.layers[-2].output.shape)
+        print("Shape of the image at the end of CNN: ", self.image_model.layers[-2].output.shape)
         self.image_features_extract_model = tf.keras.Model(new_input, hidden_layer)
 
         self.encoder = CNN_Encoder(self.EMBEDDING_DIM, self.UNITS)
@@ -268,7 +268,7 @@ class Steps:
         self.model = model
         self.ckpt = None
 
-        # metricas
+        # metrics
         self.train_acc_metric = tf.keras.metrics.SparseCategoricalAccuracy()
         self.valid_acc_metric = tf.keras.metrics.SparseCategoricalAccuracy()
 
@@ -337,7 +337,7 @@ class Steps:
         attention_plot = attention_plot[:len(result), :]
         return result, attention_plot, None
 
-    @tf.function
+    # @tf.function
     def train_step(self, img_tensor, target, train_length):
         loss = 0
         zeros = np.zeros(target.shape[0]).astype(int)
@@ -375,7 +375,7 @@ class Steps:
     #
     # call train without update the gradient
     #
-    @tf.function
+    # @tf.function
     def test_step(self, img_tensor, target, train_length):
         loss = 0
         zeros = np.zeros(target.shape[0]).astype(int)
@@ -410,12 +410,12 @@ class TokenizerBuilder:
 
         # Choose the top 5000 words from the vocabulary
         print('building...')
-        top_k = 5000  # para ajustar ao modelo antigo...
+        top_k = 5000  # to fit the old model...
         tokenizer = tf.keras.preprocessing.text.Tokenizer(num_words=top_k,
                                                           lower=False,
                                                           oov_token="<unk>",
                                                           filters=' ')
-        # forca a usar sempre uma lista com todas as words com 1 ocorrecia de cada word
+        # force to always use a list with all words with 1 occurrence of each word
         tokenizer.fit_on_texts(labels)
         tokenizer.word_index['<pad>'] = 0
         tokenizer.index_word[0] = '<pad>'
@@ -423,7 +423,7 @@ class TokenizerBuilder:
 
     def build(self):
         tokenizer = self.build_tokenizer()
-        print('total do vocabulario= ', len(tokenizer.word_index))  # expected 1578
+        print('total vocabulary= ', len(tokenizer.word_index))  # expected 1578
 
         VOCAB_SIZE = len(tokenizer.word_index) + 1
         print('VOCAB_SIZE', VOCAB_SIZE)

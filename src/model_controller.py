@@ -12,15 +12,15 @@ from trainer import TrainerController
 class ModelPredictController:
 
     def __init__(self,
-                 NUM_LINHAS=2,
+                 NUM_LINES=2,
                  NO_TEACH=True
                  ):
         self.model = None
-        self.NUM_LINHAS = NUM_LINHAS
+        self.NUM_LINES = NUM_LINES
         self.NO_TEACH = NO_TEACH
 
     def load(self):
-        self.model = AttentionEncoderDecoderModel(NUM_LINHAS=self.NUM_LINHAS, NO_TEACH=self.NO_TEACH).build()
+        self.model = AttentionEncoderDecoderModel(NUM_LINES=self.NUM_LINES, NO_TEACH=self.NO_TEACH).build()
 
     def useModel(self, model):
         self.model = model
@@ -80,21 +80,21 @@ def save_train_log(trainName, logs):
     with open(logFile, 'w') as file:
         for log in logs:
             file.write(json.dumps(log) + '\n')
-    print('arquivo de log gerado em ', logFile)
+    print('log file generated in ', logFile)
 
 
 class ModelTrainController:
     def __init__(self,
-                 NUM_LINHAS=2,
+                 NUM_LINES=2,
                  NO_TEACH=True
                  ):
         self.model = None
         self.trainer = None
         self.NO_TEACH = NO_TEACH
-        self.NUM_LINHAS = NUM_LINHAS
+        self.NUM_LINES = NUM_LINES
 
     def load(self):
-        self.model = AttentionEncoderDecoderModel(NUM_LINHAS=self.NUM_LINHAS, NO_TEACH=self.NO_TEACH).build()
+        self.model = AttentionEncoderDecoderModel(NUM_LINES=self.NUM_LINES, NO_TEACH=self.NO_TEACH).build()
 
     def useModel(self, model):
         self.model = model
@@ -127,9 +127,9 @@ class ModelTrainController:
         print('Dataset from zip file ', datasetZipFileOrFolder, ' ready for training')
 
     def trainUntil(self, target_loss, target_acc, min_max_epoch, lens=[4], train_name='none', test_set=None):
-        print('starting trainUntil ', target_loss, min_max_epoch, train_name)
+        print('starting train Until ', target_loss, min_max_epoch, train_name)
         self.trainer.trainUntil(target_loss, target_acc, min_max_epoch, lens, train_name, test_set=test_set)
-        print('starting trainUntil ', target_loss, min_max_epoch, train_name, ' DONE!')
+        print('starting train Until ', target_loss, min_max_epoch, train_name, ' DONE!')
 
     def save(self, trainName):
         checkPointPath = os.path.join(config['CHECKPOINT_FOLDER'], trainName)
@@ -145,7 +145,7 @@ class ModelTrainController:
                                      test_set=None):
 
         if self.levelCheckpointExists(curriculumName):
-            print('treino já finalizado. Checkpoint em ', self.levelCheckpointExists(curriculumName));
+            print('Training already finished. Checkpoint in ', self.levelCheckpointExists(curriculumName));
             return
 
         skip = True
@@ -153,23 +153,23 @@ class ModelTrainController:
             checkpointName = "{}--{}".format(curriculumName, os.path.basename(levelZipFile).replace('.zip', ''))
 
             if skip and self.levelCheckpointExists(checkpointName):
-                # se treino ja foi finalizado, somente recupera..
-                print('treino para ', checkpointName, ' ja realizado. Recupera checkpoint')
+                # If training has already been finished, only recovers ..
+                print('training for ', checkpointName, ' already done. Recovers checkpoint')
                 ModelPredictController().useModel(self.model).restoreFromCheckpointName(checkpointName)
             else:
-                # caso contrario, faz o treinamento
-                print('treino para ', checkpointName, ' NAO realizado. Realiza treinamento.')
+                # If contrary, do the training
+                print('training for ', checkpointName, ' not done. Performs training.')
                 self.prepareDatasetForTrain(levelZipFile, use_sample)
                 self.trainUntil(target_loss, target_acc, min_max_epoch, lens, checkpointName, test_set)
                 self.save(checkpointName)
                 skip = False
 
-                # valida no testset, até o tamanho maximo informado
+                # Validated in the testset, until the size maximum informed
                 # evaluator = Evaluator(self.model, target_len=lens[-1])
-                # test_acc = evaluator.evaluate_test_data('teste' if self.NUM_LINHAS == 2 else 'test-8lines')
+                # test_acc = evaluator.evaluate_test_data('teste' if self.NUM_LINES == 2 else 'test-8lines')
 
-                # salva em aquivo
+                # save
                 save_train_log(checkpointName, self.trainer.logs)
 
         self.save(curriculumName)
-        print('treinamento de curriculo finalizado com sucesso!')
+        print('Curriculum training successfully finished!')
